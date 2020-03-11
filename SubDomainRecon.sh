@@ -3,7 +3,7 @@
 # amass, massdns, altdns, commonspeak
 # all.txt, commonspeak****, words.txt, resolvers.txt
 # full paths
-listDir="."
+listDir="/root/ToolKit/wordlists"
 massDir="/root/ToolKit/Tools/massdns"
 commonDir="/root/ToolKit/Tools/commonspeak"
 
