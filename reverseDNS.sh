@@ -6,7 +6,7 @@ fi
 while read ip; do
 	if [[ $ip =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
 		buf=$(host "$ip" | awk '{ print $5 }' | sed ' s/\.$//g')
-		if [ $buf != "3(NXDOMAIN)" ]
+		if [ $? -eq 0 ] && [ $buf != "3(NXDOMAIN)" ]
 		then
 			echo "$buf"
 		fi
